@@ -1,0 +1,41 @@
+body {
+ box-sizing: border-box;
+
+
+}
+
+p {
+
+  padding: 20px;  
+}
+
+
+.card {
+ width: 500px;
+ margin: 10px auto;
+ border:  1px solid green;
+ 
+
+
+}
+.card-data {
+
+    margin-bottom: 20px;
+    padding: 20px;
+    display: inline;
+
+}
+
+.card-form {
+
+    margin-bottom: 20px;
+    padding: 20px;
+
+
+}
+
+button {
+
+
+    margin-left: 10px;
+}
