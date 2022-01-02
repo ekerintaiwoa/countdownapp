@@ -9,16 +9,25 @@ class Countdown extends React.Component {
    super(props)
 
    this.state =  {
-     deadline : "February 28, 2022"
+     deadline : "February 28, 2022" ,
+     newDeadLine : ""
 
 
 
+   } ;
 
-   }
 
-
+     
 
  }
+
+ changeDeadLine() {
+
+ 
+  this.setState({deadline : this.state.newDeadLine})
+
+  }
+
 
 
 
@@ -42,8 +51,12 @@ class Countdown extends React.Component {
                     
                </div>
                <div className="card-form">
-               <input placeholder="new Date" />
-               <button> Submit</button>
+               <input 
+               placeholder="new Date"
+               onChange={ event=>this.setState({newDeadLine:event.target.value})}
+               
+               />
+               <button onClick={()=>this.changeDeadLine()}> Submit</button>
                </div>
 
 
