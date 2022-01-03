@@ -1,7 +1,7 @@
 import React, {useState} from "react";
 import { Component } from "react/cjs/react.production.min";
 import './styles.css'
-import Clock from "./Clock";
+import Clock from  '../components/Clock'
 
 
 class Countdown extends React.Component {
@@ -10,7 +10,7 @@ class Countdown extends React.Component {
    super(props)
 
    this.state =  {
-     deadline : "February 28, 2022" ,
+     deadline : 'Jul 25, 2022' ,
      newDeadLine : ""
 
 
@@ -44,7 +44,12 @@ class Countdown extends React.Component {
         <div className="card">
                 <div >  <p>  count down to {this.state.deadline}</p> </div>
 
-               <Clock/>
+               <Clock    
+               
+               deadline = {this.state.deadline}
+               
+               
+               />
                <div className="card-form">
                <input 
                placeholder="new Date"
